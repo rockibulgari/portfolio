@@ -414,7 +414,7 @@ b { font-weight: 600; }
 .list--compact.list--check li::before { top: .36em; }
 
 /* ========== Прайс ========== */
-.plans { display: grid; gap: 20px; }
+.plans { display: grid; gap: 28px; }
 
 .plan {
   position: relative;
@@ -434,8 +434,11 @@ b { font-weight: 600; }
 }
 
 .plan__badge {
-  align-self: flex-start;
-  margin-bottom: 12px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
   padding: 5px 12px;
   border-radius: 999px;
   background: var(--accent);
@@ -488,6 +491,13 @@ b { font-weight: 600; }
 .plan__variant b { color: var(--ink); }
 
 .plan__btn { margin-top: 28px; width: 100%; }
+
+.plans__note {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--ink-soft);
+  text-align: center;
+}
 
 /* Условия */
 .terms {
@@ -729,7 +739,6 @@ b { font-weight: 600; }
     gap: 24px;
     align-items: start;
   }
-  .plan--featured { margin-top: -12px; }
   .plan:hover { box-shadow: 0 18px 40px -24px rgba(22, 24, 29, .25); }
 
   .terms, .extras { padding: 40px 48px; }
