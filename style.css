@@ -175,10 +175,18 @@ b { font-weight: 600; }
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   color: var(--ink);
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -.01em;
+}
+
+.logo__mark {
+  display: block;
+  flex: none;
 }
 
 .nav { display: none; }
