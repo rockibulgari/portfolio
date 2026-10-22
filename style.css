@@ -337,6 +337,8 @@ b { font-weight: 600; }
   box-shadow: 0 8px 24px rgba(22, 24, 29, .06);
 }
 .shot__link { display: block; border-radius: var(--radius); cursor: zoom-in; }
+.shot--native .shot__link { width: fit-content; max-width: 100%; }
+.shot--native img { width: auto; max-width: 100%; }
 .shot__link:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .shot figcaption {
   margin-top: 10px;
